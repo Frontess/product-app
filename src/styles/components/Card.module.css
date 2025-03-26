@@ -1,0 +1,151 @@
+/* Стили для заголовка страницы с логотипом */
+.header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+}
+
+.pageTitle {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #5b80a3;
+}
+
+/* Контейнер карточек */
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap; /* Расположение карточек в несколько рядов */
+  gap: 16px; /* Расстояние между карточками */
+  justify-content: space-between;
+}
+
+/* Карточка товара */
+.card {
+  flex: 1 1 calc(33.333% - 16px); /* Размер карточки */
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 8px auto;
+  text-align: center;
+}
+
+.image {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+/* Название товара */
+.cardTitle {
+  font-size: 1.25rem;
+  margin: 12px 0;
+}
+
+/* Описание товара */
+.cardDescription {
+  flex-grow: 1;
+  font-size: 0.875rem;
+  color: #666;
+}
+
+/* Действия с карточкой (лайк/удалить) */
+.actions {
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-around;
+  gap: 8px;
+}
+
+/* Общие стили для кнопок */
+.likeButton,
+.deleteButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.likeButton {
+  color: #999;
+}
+
+.liked {
+  color: red; /* Цвет при нажатии "лайк" */
+}
+
+.deleteButton {
+  color: #ff5c5c;
+}
+
+.deleteButton:hover {
+  color: red;
+}
+
+/* Кнопка создания нового продукта */
+.createButton {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.createButton:hover {
+  background-color: #218838;
+}
+
+/* Фильтры товаров */
+.filterButtons {
+  margin-bottom: 16px;
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+.filterButton {
+  background-color: #ddd;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.filterButton:hover {
+  background-color: #ccc;
+}
+
+.activeButton {
+  background-color: #5b80a3;
+  color: #fff;
+}
+
+/* Поиск товаров */
+.searchInput {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  margin: 16px auto;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.searchInput:focus {
+  border-color: #5b80a3;
+  outline: none;
+}

@@ -1,0 +1,65 @@
+/* Контейнер страницы */
+.pageContainer {
+  text-align: center;
+  margin: 20px;
+}
+
+/* Заголовок страницы */
+.title {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  color: #5b80a3;
+  margin-bottom: 20px;
+}
+
+/* Текст описания */
+.description {
+  font-size: 18px;
+  color: #666;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Контейнер кнопок */
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Общие стили кнопок */
+.button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: white;
+  font-size: 16px;
+}
+
+/* Стили кнопки "Перейти к товарам" */
+.productsButton {
+  background-color: #5b80a3;
+}
+
+.productsButton:hover {
+  background-color: #477199;
+}
+
+/* Стили кнопки "Создать продукт" */
+.createButton {
+  background-color: #64a853;
+}
+
+.createButton:hover {
+  background-color: #4b863e;
+}
+
+/* Стили изображения */
+.image {
+  border-radius: 10px;
+  margin-bottom: 20px;
+  max-width: 300px;
+  height: auto;
+}
