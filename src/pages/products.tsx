@@ -53,7 +53,7 @@ const Products: React.FC = () => {
       <div className={styles.header}>
         <Link href="/">
           <img
-            src="/favicon.ico" // Путь к фавикону
+            src="/product-app//favicon.ico" // Путь к фавикону
             alt="Логотип Product App"
             className={styles.logo}
           />

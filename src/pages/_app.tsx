@@ -9,7 +9,7 @@ const MyApp = ({ Component, pageProps }: any) => {
     <Provider store={store}>
       <>
         <Head>
-          <link rel="icon" href="/favicon.ico" />
+          <link rel="icon" href="/product-app/favicon.ico" />
         </Head>
         <Component {...pageProps} />
       </>

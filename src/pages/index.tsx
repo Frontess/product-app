@@ -7,7 +7,7 @@ const Home: React.FC = () => {
     <div className={styles.pageContainer}>
       {/* Картинка crystal-ball */}
       <img
-        src="/crystal-ball.png"
+        src="/product-app/crystal-ball.png"
         alt="Crystal Ball"
         className={styles.image}
       />

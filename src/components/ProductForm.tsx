@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useDispatch } from "react-redux";
-import { addProduct } from "../redux/slices/productSlice";
+import { addProduct } from "../redux/slices/producSlice";
 import { useRouter } from "next/router";
 
 const ProductForm: React.FC = () => {
