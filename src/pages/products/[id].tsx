@@ -4,11 +4,15 @@ import { useRouter } from "next/router";
 import { RootState } from "../../redux/store";
 import { loadProducts } from "../../redux/slices/producSlice";
 import styles from "../../styles/components/ProductPage.module.css";
+import { ThunkDispatch } from "redux-thunk";
+import { AnyAction } from "redux";
 
 const ProductPage: React.FC = () => {
   const router = useRouter();
   const { id } = router.query;
-  const dispatch = useDispatch();
+
+  // Типизированный dispatch для поддержки асинхронных действий
+  const dispatch: ThunkDispatch<RootState, void, AnyAction> = useDispatch();
 
   // Получаем товары из Redux Store
   const {
@@ -20,7 +24,7 @@ const ProductPage: React.FC = () => {
   // Загружаем товары, если они ещё не загружены
   useEffect(() => {
     if (!products.length) {
-      dispatch(loadProducts());
+      dispatch(loadProducts()); // Здесь не требуется приведение типов
     }
   }, [dispatch, products.length]);
 

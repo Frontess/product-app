@@ -7,7 +7,7 @@ const ProductDetails: React.FC = () => {
   const router = useRouter();
   const { id } = router.query;
   const product = useSelector((state: RootState) =>
-    state.products.find((p) => p.id === id)
+    state.products.items.find((p) => p.id === id)
   );
 
   if (!product) return <div>Product not found</div>;

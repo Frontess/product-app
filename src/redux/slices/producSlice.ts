@@ -7,8 +7,8 @@ type Product = {
   title: string;
   description: string;
   image: string;
-  price: number;
-  category: string;
+  price?: number;
+  category?: string;
   liked: boolean;
 };
 
