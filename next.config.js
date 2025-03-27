@@ -3,7 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   output: "export", // Экспорт проекта в статические файлы
   basePath: "/product-app", // Имя репозитория
-  assetPrefix: "/product-app", // Префикс для корректной загрузки файлов
+  assetPrefix: "/product-app/", // Префикс для корректной загрузки файлов
   images: {
     unoptimized: true, // Отключение оптимизации изображений
   },
